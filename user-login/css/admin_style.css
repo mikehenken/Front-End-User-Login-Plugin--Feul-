@@ -1,0 +1,127 @@
+.text {
+width:160px !important;
+}
+.user_tr_header {
+border:0px;border-bottom:0px;border-bottom-width:0px;
+}
+.user_tr {
+border:0px;border-bottom:0px;border-bottom-width:0px;background:#F7F7F7;
+}
+.user_tr td{
+border:0px;border-bottom:0px;border-bottom-width:0px;background:#F7F7F7;
+}
+.user_sub_tr {
+border:0px;border-bottom:0px !important; border-bottom-width:0px !important;border-top:0px;border-top-width:0px !important;display:none
+}
+.user_sub_tr h3{
+font-size:14px; padding:0px;margin:0px;
+}
+.user_sub_tr td{
+border:0px;border-bottom:0px !important;border-bottom-width:0px !important;padding-top:6px !important; border-top: 0px !important;
+}
+.hiduser {
+display:none;
+}
+.user_sub_tr select{
+width:160px;
+}
+.perm label {
+clear:left
+}
+.perm_div {
+width:70px;height:40px;float:left;margin-left:4px;
+}
+.leftsec {
+width:180px;
+float:left;
+}
+.rightsec {
+width:180px;
+}
+.perm_select {
+width:220px;float:left;
+}
+.perm_div_2 {
+width:auto;float:left;padding-top:6px;
+}
+.acurser {
+cursor:pointer;text-decoration:underline;color:#D94136;position:absolute;margin-left:0px;
+}
+.hcurser {
+cursor:pointer;text-decoration:underline;color:#D94136;
+}
+.edit-pointer {
+cursor:pointer;
+}
+
+.m_pic {
+	width:180px;
+	float:left;
+	border:1px solid white;
+	padding:1px;
+	margin-top:0px;
+	margin-right:10px;
+}
+.savedProperty tr td h2 {
+	margin:5px;
+	font-size:15px;
+	margin-top:6px;
+	margin-top:0px;
+	padding-top:0px;
+}
+.savedProperty {
+	width:900px !important;
+	margin-bottom:30px;
+}
+.savedProperty td h2{
+	font-size:17px;
+}
+.label
+{
+	padding: 0;
+	margin: 0;
+	color: #222;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: arial, helvetica, sans-serif;
+}
+
+
+.tabSelected {
+	background: #F9F9F9 !important;
+	color: #182227 !important;;
+}
+#sidebar {
+	display:none
+}
+#maincontent {
+	width:960px;
+}
+.text {
+	color: #333;
+	border: 1px solid #AAA;
+	padding: 3px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+form p {
+	margin-bottom: 15px;
+}
+
+.full {
+	width:98% !important;
+}
+
+h4 {
+	width:918px !important;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Georgia, Times, Times New Roman, serif;
+	color: #CF3805;
+	margin-bottom:10px !important;
+}
