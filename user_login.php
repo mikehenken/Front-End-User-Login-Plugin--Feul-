@@ -2,7 +2,7 @@
 /*
 Plugin Name: User Login XML
 Description: Allow users to create an account and login to your website. Protects pages. XML Based.
-Version: 3.0
+Version: 3.1
 Author: Mike Henken
 Author URI: http://michaelhenken.com/
 */
@@ -14,7 +14,7 @@ $thisfile=basename(__FILE__, ".php");
 register_plugin(
 	$thisfile, 
 	'Front-End User Login', 
-	'3.0', 			
+	'3.1', 			
 	'Mike Henken',	
 	'http://michaelhenken.com/', 
 	'Allow users to create an account and login to your website. Protects pages. Uses XML Or Database.', 

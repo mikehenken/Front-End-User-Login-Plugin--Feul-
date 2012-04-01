@@ -150,7 +150,7 @@ float:left;
 			}
 			else
 			{
-				echo '<div class="updated">Front-End User Login Settings Succesfully Edited</div>';
+				echo '<div class="updated">Front-End User Login Settings Succesfully Created</div>';
 			}
 		}
 		
@@ -176,6 +176,20 @@ float:left;
 		if($this->Storage == 'DB')
 		{
 			$this->dbh = $this->connectDB();
+		}
+
+		//Create data/site-users directory
+		if(!file_exists(SITEUSERSPATH))
+		{
+			$create_feul_path = mkdir(SITEUSERSPATH);
+			if($create_feul_path)
+			{
+				echo '<div class="updated">data/site-users Directory Succesfully Created</div>';
+			}
+			else
+			{
+				echo '<div class="error"><strong>The data/site-users folder could not be created!</strong><br/>You are going to have to create this directory yourelf for the plugin to work properly</div>';
+			}
 		}
 	}
 		
@@ -309,6 +323,7 @@ float:left;
     */  
 	public function getAllUsers()
 	{
+		$result = '';
 		if($this->Storage == 'XML')
 		{
 			$dir = SITEUSERSPATH."*.xml";
@@ -507,7 +522,7 @@ float:left;
 		
 		if($this->Storage == 'XML')
 		{
-			$usrfile = strtolower($_POST['usernamec']);
+			$usrfile = strtolower($username);
 			$usrfile	= $usrfile . '.xml';
 
 			// create user xml file - This coding was mostly taken from the 'settings.php' page..
