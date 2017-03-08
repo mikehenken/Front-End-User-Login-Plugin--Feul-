@@ -515,7 +515,7 @@ float:left;
 	{
 		if($convert == null)
 		{
-			$password = md5($password);
+			$password = crypt($password);
 		}
 
 		$username = strtolower($username);
@@ -614,7 +614,7 @@ float:left;
 		
 		if($change_pass != null)
 		{
-			$password = md5($change_pass);
+			$password = crypt($change_pass);
 		}
 
 		// create user xml file - This coding was mostly taken from the 'settings.php' page..
@@ -796,7 +796,7 @@ float:left;
 			}
 
 			//Check XML File Password.. If Correct, Log User In And Redirect Back To Page
-			if(md5($password) == $user_pass)
+			if(crypt($password, $user_pass) == $user_pass)
 			{
 				$_SESSION['Username'] = $_POST['username'];
 				$_SESSION['LoggedIn'] = 1;

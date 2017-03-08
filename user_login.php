@@ -816,6 +816,7 @@ function user_login_edit()
 				<input type="checkbox" value="yes" name="member-only" style="" <?php echo $member_checkbox; ?> />
 			</p>
 		</div> 
+        <div class="clear"></div>
 	<?php
 }
 
